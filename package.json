@@ -1,0 +1,24 @@
+{
+  "name": "news-explorer-frontend",
+  "version": "1.0.0",
+  "description": "News Project Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0nyhat/news-explorer-frontend.git"
+  },
+  "keywords": [
+    "JS",
+    "frontend",
+    "webpack"
+  ],
+  "author": "Tony Hat <elkobrat@protonmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t0nyhat/news-explorer-frontend/issues"
+  },
+  "homepage": "https://github.com/t0nyhat/news-explorer-frontend#readme"
+}
