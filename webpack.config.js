@@ -77,14 +77,22 @@ module.exports = {
       canPrint: true,
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       template: './src/index.html',
       filename: './index.html',
+      chunks: ['main'],
+      minify: {
+        collapseWhitespace:true
+      }
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       template: './src/articles/index.html',
       filename: './articles/index.html',
+      chunks: ['articles'],
+      minify: {
+        collapseWhitespace:true
+      }
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
