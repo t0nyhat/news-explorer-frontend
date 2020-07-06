@@ -1,0 +1,24 @@
+@import url('./_dark/header__auth-button_dark.css');
+.header__auth-button{
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  border: 1px solid white;
+  box-sizing: border-box;
+  border-radius: 100px;
+  height: 48px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px){
+  .header__auth-button{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    align-self: stretch;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 18px;
+  }
+}
