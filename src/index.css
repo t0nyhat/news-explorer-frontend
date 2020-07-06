@@ -1,5 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
-body{
-  background-color: red;
-}
+@import url(./blocks/header/header.css);
+@import url(./blocks/button/button.css);
+@import url('./blocks/link/link.css');
+

@@ -1,0 +1,29 @@
+
+@import url('./_auth/header__menu_auth.css');
+@import url('./_light/header__menu_light.css');
+.header__menu{
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2,minmax(max-content, max-content));
+  justify-content: right;
+  margin-right: calc( (100vw - 768px)/(1440 - 768) * (104 - 40) + 40px);
+  column-gap: calc( (100vw - 768px)/(1440 - 768) * (34 - 16) + 16px);
+}
+
+@media screen and (max-width: 767px){
+  .header__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .header__menu_hide{
+    display: none;
+  }
+  .header__menu_open{
+    display: flex;
+  }
+}
