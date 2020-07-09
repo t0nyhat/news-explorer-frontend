@@ -1,0 +1,11 @@
+.search-and-header-container {
+  background-image: url("../../images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+

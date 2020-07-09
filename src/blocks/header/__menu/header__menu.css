@@ -11,6 +11,9 @@
   margin-right: calc( (100vw - 768px)/(1440 - 768) * (104 - 40) + 40px);
   column-gap: calc( (100vw - 768px)/(1440 - 768) * (34 - 16) + 16px);
 }
+.header__menu_auth{
+  grid-template-columns: repeat(3,minmax(max-content, max-content));
+}
 
 @media screen and (max-width: 767px){
   .header__menu{

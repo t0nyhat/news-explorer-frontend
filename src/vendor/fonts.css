@@ -16,7 +16,7 @@
   src: local('Roboto'),
        url("./fonts/Robotobold.woff2") format("woff2"),
        url('./fonts/Robotobold.woff') format('woff'),
-       url('./fonts/Robotobold.ttf') format('ttf'); 
+       url('./fonts/Robotobold.ttf') format('ttf');
 }
 
 
@@ -38,7 +38,7 @@
   src: local('Roboto'),
        url("./fonts/Roboto.woff2") format("woff2"),
        url('./fonts/Roboto.woff') format('woff'),
-       url('./fonts/Roboto.ttf') format('ttf'); 
+       url('./fonts/Roboto.ttf') format('ttf');
 }
 
 @font-face {
@@ -48,7 +48,7 @@
   src: local('Roboto'),
        url("./fonts/Roboto.woff2") format("woff2"),
        url('./fonts/Roboto.woff') format('woff'),
-       url('./fonts/Roboto.ttf') format('ttf'); 
+       url('./fonts/Roboto.ttf') format('ttf');
 }
 
 @font-face {
@@ -58,7 +58,7 @@
   src: local('Roboto'),
        url("./fonts/Robotoblack.woff2") format("woff2"),
        url('./fonts/Robotoblack.woff') format('woff'),
-       url('./fonts/Robotoblack.ttf') format('ttf'); 
+       url('./fonts/Robotoblack.ttf') format('ttf');
 }
 
 @font-face {
@@ -68,7 +68,7 @@
   src: local('SourceSansPro'),
        url("./fonts/sourcesanspro.woff2") format("woff2"),
        url('./fonts/sourcesanspro.woff') format('woff'),
-       url('./fonts/sourcesanspro.ttf') format('ttf'); 
+       url('./fonts/sourcesanspro.ttf') format('ttf');
 }
 
 @font-face {
