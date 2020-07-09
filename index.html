@@ -1,6 +1,74 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="News"><meta name="author" content="Tony Hat"><title>News Explorer</title><link rel="icon" href="./images/favicon.png"><link rel="shortcut icon" href="./images/favicon.png"><link href="main/main.b463d08576d36c76758c.css" rel="stylesheet"></head><body><header class="header"><div class="header__logo"><span class="header__logo-text">NewsExplorer</span> <img class="header__mobile-menu-pic header__logout-pic_dark" src="./images/menu.svg" alt="mobile menu icon"></div><nav class="header__menu"><a class="link header__link header__link_active" href="index.html">Главная</a> <a class="link header__link header__link_hide" href="articles.html">Сохранённые статьи</a> <button class="button header__auth-button"><span class="header__auth-text">Авторизоваться</span> <svg class="header__logout-pic-container header__logout-pic-container_hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path class="header__logout-pic header__logout-pic_light" fill-rule="evenodd" clip-rule="evenodd" d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z" fill="#1A1B22"/></svg></button></nav></header><script>let mobileMenu = document.querySelector('.header__menu');
-  let mobileMenuButton = document.querySelector('.header__mobile-menu-pic');
-  mobileMenuButton.addEventListener('click',()=>{
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="News"><meta name="author" content="Tony Hat"><title>News Explorer</title><link rel="icon" href="./images/favicon.png"><link rel="shortcut icon" href="./images/favicon.png"><link href="main/main.9ffe58dced525cccfd1d.css" rel="stylesheet"></head><body><div class="search-and-header-container"><header class="header"><div class="header__logo"><span class="header__logo-text">NewsExplorer</span> <img class="header__mobile-menu-pic" src="./images/menu.svg" alt="mobile menu icon"></div><nav class="header__menu header__menu_hide"><a class="link header__link header__link_active" href="index.html">Главная</a> <a class="link articles header__link header__link_hide" href="articles.html">Сохранённые статьи</a> <button class="button header__auth-button"><span class="header__auth-text">Авторизоваться</span> <img src="./images/logout_light.svg" class="header__logout-pic" alt="icon logout"></button></nav></header><div class="search"><h1 class="search__title">Что в мире творится?</h1><p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p><form class="search__form" name="search-news" method="post"><input class="search__input" type="text" name="search" placeholder="Введите тему новости" minlength="3" required> <button class="button search__button" type="submit">Искать</button></form></div><i class="circle-preloader circle-preloader_hide"></i></div><section class="about-author"><picture class="about-author__photo"><source srcset="./images/avatar.png" media="(min-width: 1024px)" type="image/png"><source srcset="./images/avatar_tablet.png" media="(min-width: 768px)" type="image/png"><source srcset="./images/avatar_mobile.png" media="(min-width: 320px)" type="image/png"><img src="./images/avatar.png" alt="author's photo"></picture><div class="about-author__description"><h3 class="about-author__title">Об авторе</h3><p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p><p class="about-author__text">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p></div></section><section class="popup popup__signup popup_hide"><fieldset class="popup__container"><img src="./images/close.svg" class="popup__close" alt="icon close"><h3 class="popup__title">Регистрация</h3><form class="popup__form" name="signup" action="https://httpbin.org/post" method="POST"><label class="popup__label" for="signup_email">Email</label> <input type="email" name="email" class="popup__input" id="signup_email" placeholder="Введите email" pattern="^[a-zA-Z0-9_]+([-\.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+(\.[a-zA-Z]{2,})+$" required> <span class="popup__error">Неправильный формат email</span> <label class="popup__label" for="signup_password">Пароль</label> <input type="password" name="password" class="popup__input" id="signup_password" placeholder="Введите пароль" minlength="8" maxlength="30" required> <span class="popup__error"></span> <label class="popup__label" for="signup_name">Имя</label> <input type="text" name="name" class="popup__input" id="signup_name" placeholder="Введите свое имя" minlength="2" maxlength="30" required> <span class="popup__error"></span> <button type="submit" class="button popup__button">Зарегистрироваться</button><div class="popup__text-wrapper"><span class="popup__text">или </span><a class="popup__link link" href="#">Войти</a></div></form></fieldset></section><section class="popup popup__signin popup_hide"><div class="popup__container"><img src="./images/close.svg" class="popup__close" alt="icon close"><h3 class="popup__title">Вход</h3><form class="popup__form" name="signup"><label class="popup__label" for="signin_email">Email</label> <input type="email" name="email" class="popup__input" id="signin_email" placeholder="Введите email" pattern="^[a-zA-Z0-9_]+([-\.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+(\.[a-zA-Z]{2,})+$" required> <span class="popup__error">Неправильный формат email</span> <label class="popup__label" for="signin_password">Пароль</label> <input type="password" name="password" class="popup__input" id="signin_password" placeholder="Введите пароль" minlength="8" maxlength="30" required> <span class="popup__error"></span> <button type="submit" class="button popup__button">Войти</button><div class="popup__text-wrapper"><span class="popup__text">или </span><a class="popup__link link" href="#">Зарегистрироваться</a></div></form></div></section><section class="popup popup__message popup_hide"><div class="popup__container"><img src="./images/close.svg" class="popup__close" alt="icon close"><h3 class="popup__title">Пользователь успешно зарегистрирован!</h3><a class="popup__link link" href="#">Выполнить вход</a></div></section><script>const mobileMenu = document.querySelector('.header__menu');
+  const mobileMenuButton = document.querySelector('.header__mobile-menu-pic');
+  const signupPopup = document.querySelector('.popup__signup');
+  const signinPopup = document.querySelector('.popup__signin');
+  const authButton = document.querySelector('.header__auth-button');
+  const popupLink = document.querySelector('.popup__link');
+  const popupMessageLink = document.querySelector('.popup__message .popup__link');
+  const popupSignupClose = document.querySelector('.popup__signup .popup__close');
+  const popupSigninClose = document.querySelector('.popup__signin .popup__close');
+  const logoutPic = document.querySelector('.header__logout-pic');
+  const headerAuthText = document.querySelector('.header__auth-text');
+  const articlesLink = document.querySelector('.articles');
+  const popupMessage = document.querySelector('.popup__message');
+  const popupMessageClose = document.querySelector('.popup__message .popup__close');
+
+  mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('header__menu_open');
     mobileMenuButton.classList.toggle('header__mobile-menu-pic_open');
-  })</script><script src="main/main.19a631517f6d367c6073.js"></script></body></html>
+  });
+  authButton.addEventListener('click', () => {
+    if (headerAuthText.textContent === 'Авторизоваться') {
+      signupPopup.classList.remove('popup_hide');
+      signupPopup.classList.add('popup_show');
+    } else {
+      headerAuthText.textContent = 'Авторизоваться';
+      logoutPic.classList.remove('header__logout-pic_show');
+      articlesLink.classList.add('header__link_hide');
+      mobileMenu.classList.remove('header__menu_auth');
+    }
+  });
+  signupPopup.addEventListener('submit', (event) => {
+    popupMessage.classList.remove('popup_hide');
+    popupMessage.classList.add('popup_show');
+    signupPopup.classList.remove('popup_show');
+    signupPopup.classList.add('popup_hide');
+    event.preventDefault();
+    event.target.reset();
+  });
+  signinPopup.addEventListener('submit', (event) => {
+    logoutPic.classList.add('header__logout-pic_show');
+    headerAuthText.textContent = 'Грета';
+    signinPopup.classList.remove('popup_show');
+    signinPopup.classList.add('popup_hide');
+    articlesLink.classList.remove('header__link_hide');
+    mobileMenu.classList.add('header__menu_auth');
+    event.preventDefault();
+    event.target.reset();
+  });
+  popupLink.addEventListener('click', (event) => {
+    signupPopup.classList.remove('popup_show');
+    signupPopup.classList.add('popup_hide');
+    signinPopup.classList.add('popup_show');
+    signinPopup.classList.remove('popup_hide');
+    event.preventDefault();
+  });
+  popupMessageLink.addEventListener('click', (event) => {
+    popupMessage.classList.remove('popup_show');
+    popupMessage.classList.add('popup_hide');
+    signinPopup.classList.add('popup_show');
+    signinPopup.classList.remove('popup_hide');
+    event.preventDefault();
+  });
+  popupSigninClose.addEventListener('click', () => {
+    signinPopup.classList.remove('popup_show');
+    signinPopup.classList.add('popup_hide');
+  });
+  popupSignupClose.addEventListener('click', () => {
+    signupPopup.classList.remove('popup_show');
+    signupPopup.classList.add('popup_hide');
+  });
+  popupMessageClose.addEventListener('click', () => {
+    popupMessage.classList.remove('popup_show');
+    popupMessage.classList.add('popup_hide');
+  });</script><script src="main/main.19a631517f6d367c6073.js"></script></body></html>
