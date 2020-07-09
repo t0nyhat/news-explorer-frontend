@@ -1,4 +1,4 @@
-@import url('./_show/header__logout-pic_show.css');
+@import url(_show/header__logout-pic_show.css);
 .header__logout-pic{
   display: none;
 }

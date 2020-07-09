@@ -1,4 +1,4 @@
-@import url('./_dark/header__auth-button_dark.css');
+@import url(_dark/header__auth-button_dark.css);
 .header__auth-button{
   display: flex;
   align-items: center;

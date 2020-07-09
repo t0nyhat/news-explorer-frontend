@@ -1,6 +1,6 @@
-@import url('./_active/header__link_active.css');
-@import url('./_dark/header__link_dark.css');
-@import url('./_hide/header__link_hide.css');
+@import url(_active/header__link_active.css);
+@import url(_dark/header__link_dark.css);
+@import url(_hide/header__link_hide.css);
 
 .header__link{
   color: #FFF;
