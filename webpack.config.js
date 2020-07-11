@@ -15,6 +15,41 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name]/[name].[chunkhash].js',
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name]/[name].[contenthash].css',
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: './src/index.html',
+      filename: './index.html',
+      chunks: ['main'],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: './src/articles/index.html',
+      filename: './articles/index.html',
+      chunks: ['articles'],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new WebpackMd5Hash(),
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+    }),
+    new OptimizeCssAssetsPlugin({
+      assetNameRegExp: /\.css$/g,
+      cssProcessor: cssnano,
+      cssProcessorPluginOptions: {
+        preset: ['default'],
+      },
+      canPrint: true,
+    }),
+  ],
   module: {
     rules: [
       {
@@ -31,7 +66,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: { publicPath: '../' },
           },
-          'css-loader', 'postcss-loader'
+          'css-loader', 'postcss-loader',
         ],
       },
 
@@ -66,47 +101,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name]/[name].[contenthash].css',
-    }),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.css$/g,
-      cssProcessor: cssnano,
-      cssProcessorPluginOptions: {
-        preset: ['default'],
-      },
-      canPrint: true,
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: './src/index.html',
-      filename: './index.html',
-      chunks: ['main'],
-      minify: {
-        collapseWhitespace:true
-      }
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: './src/articles/index.html',
-      filename: './articles/index.html',
-      chunks: ['articles'],
-      minify: {
-        collapseWhitespace:true
-      }
-    }),
-    new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-    }),
-    new OptimizeCssAssetsPlugin({
-      assetNameRegExp: /\.css$/g,
-      cssProcessor: cssnano,
-      cssProcessorPluginOptions: {
-        preset: ['default'],
-      },
-      canPrint: true,
-    }),
-  ],
+
 };
