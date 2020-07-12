@@ -1,0 +1,6 @@
+
+.search-results__not-found-container {
+  height: 374px;
+  display: flex;
+  flex-direction: column;
+}

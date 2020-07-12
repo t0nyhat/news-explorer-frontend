@@ -1,0 +1,18 @@
+.article__header {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: min(calc( (100vw - 768px)/(1440 - 768) * (26 - 22) + 22px), 26px);
+  line-height: min(calc( (100vw - 768px)/(1440 - 768) * (30 - 24) + 24px), 30px);
+  color: #1A1B22;
+  margin-top: 12px;
+  margin-bottom: 0;
+  width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .article__header {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,10 @@
+.article__status {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: auto;
+  display: none;
+}

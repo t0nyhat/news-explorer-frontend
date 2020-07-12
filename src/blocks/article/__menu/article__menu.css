@@ -1,0 +1,12 @@
+.article__menu {
+  padding: 24px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}

@@ -9,11 +9,11 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   entry: {
     main: './src/index.js',
-    articles: './src/articles/index.js',
+    articles: './src/articles/articles.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]/[name].[chunkhash].js',
+    filename: '[name]/[name].[contenthash].js',
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -30,8 +30,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      template: './src/articles/index.html',
-      filename: './articles/index.html',
+      template: './src/articles/articles.html',
+      filename: './articles.html',
       chunks: ['articles'],
       minify: {
         collapseWhitespace: true,

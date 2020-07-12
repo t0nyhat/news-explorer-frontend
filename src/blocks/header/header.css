@@ -17,7 +17,6 @@
   grid-template-rows: min(calc( (100vw - 768px)/(1440 - 768) * (80 - 66) + 66px),80px);
   max-width: 1440px;
   color: #FFF;
-  border-bottom: 1px solid rgba(196, 196, 196, .01);
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .2);
 }
 .header_dark{

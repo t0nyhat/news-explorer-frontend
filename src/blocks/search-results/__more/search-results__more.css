@@ -1,0 +1,22 @@
+.search-results__more {
+  width: min(calc( (100vw - 768px)/(1440 - 768) * (288 - 240) + 240px), 288px);
+  height: min(calc( (100vw - 768px)/(1440 - 768) * (64 - 56) + 56px), 64px);
+  background: #FFF;
+  border-radius: 80px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  border: none;
+  margin: min(calc( (100vw - 768px)/(1440 - 768) * (64 - 22) + 22px), 64px) auto min(calc( (100vw - 768px)/(1440 - 768) * (80 - 40) + 40px), 80px);
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__more {
+    margin: 15px auto 32px;
+    width: 100%;
+  }
+}
