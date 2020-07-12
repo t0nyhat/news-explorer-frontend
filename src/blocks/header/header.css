@@ -20,6 +20,10 @@
   border-bottom: 1px solid rgba(196, 196, 196, .01);
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, .2);
 }
+.header_dark{
+  background-color: #1A1B22;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
 @media screen and (min-width: 1440px){
   .header {
     margin: auto;
@@ -29,5 +33,7 @@
 @media screen and (max-width: 767px){
   .header {
     grid-template-columns: 1fr;
+    position: absolute;
+    width: 100%;
   }
 }

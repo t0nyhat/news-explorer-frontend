@@ -39,7 +39,7 @@
   </div>
 
 <section class="search-results">
-  <div class="search-results__succes-container search-results__succes-container_hide">
+  <div class="search-results__succes-container">
     <h2 class="search-text">Результаты поиска</h2>
   <div class="article__container">
     <article class="article">
@@ -141,7 +141,7 @@
   </div>
   <button class=" button search-results__more">Показать еще</button>
   </div>
-  <div class="search-results__searching-container search-results__searching-container_hide">
+  <div class="search-results__searching-container">
     <i class="circle-preloader"></i>
     <p class="circle-preloader__text">Идет поиск новостей...</p>
   </div>
@@ -228,8 +228,28 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copyright">@ 2020 Supersite, Powered by News API</p>
+      <nav class="footer__menu">
+        <div class="footer__links">
+        <a class="link footer__link" href="index.html">Главная</a>
+        <a class="link footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+      </div>
+        <div class="footer__social">
+          <a class="link footer__link"  href="https://github.com/t0nyhat/" target="_blank" >
+            <img src="<%=require('./images/github-icon.png').default%>" alt="github icon">
+          </a>
+          <a class="link footer__link"  href="https://github.com/t0nyhat/" target="_blank">
+            <img src="<%=require('./images/facebook-icon.png').default%>" alt="facebook icon">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
   <script>
   const mobileMenu = document.querySelector('.header__menu');
+  const header = document.querySelector('.header');
   const mobileMenuButton = document.querySelector('.header__mobile-menu-pic');
   const signupPopup = document.querySelector('.popup__signup');
   const signinPopup = document.querySelector('.popup__signin');
@@ -247,6 +267,7 @@
   mobileMenuButton.addEventListener('click', () => {
     mobileMenu.classList.toggle('header__menu_open');
     mobileMenuButton.classList.toggle('header__mobile-menu-pic_open');
+    header.classList.toggle('header_dark');
   });
   authButton.addEventListener('click', () => {
     if (headerAuthText.textContent === 'Авторизоваться') {
