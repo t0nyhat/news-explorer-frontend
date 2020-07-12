@@ -19,7 +19,6 @@ const popupMessageClose = document.querySelector('.popup__message .popup__close'
 mobileMenuButton.addEventListener('click', () => {
   mobileMenu.classList.toggle('header__menu_open');
   mobileMenuButton.classList.toggle('header__mobile-menu-pic_open_dark');
-  header.classList.toggle('header_dark');
 });
 authButton.addEventListener('click', () => {
   if (headerAuthText.textContent === 'Авторизоваться') {
