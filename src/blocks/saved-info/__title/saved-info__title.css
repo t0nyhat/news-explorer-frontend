@@ -1,0 +1,10 @@
+.saved-info__title{
+  font-family: 'RobotoSlab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: min(calc( (100vw - 768px)/(1440 - 768) * (40 - 30) + 30px),40px);
+  line-height: min(calc( (100vw - 768px)/(1440 - 768) * (46 - 34) + 34px),46px);
+  color: #1A1B22;
+  margin: min(calc( (100vw - 768px)/(1440 - 768) * (28 - 16) + 16px),28px) 0 0;
+  width: min(calc( (100vw - 768px)/(1440 - 768) * (530 - 336) + 336px),530px);
+}

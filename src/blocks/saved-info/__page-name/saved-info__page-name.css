@@ -1,0 +1,9 @@
+.saved-info__page-name{
+  font-family: 'RobotoSlab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: min(calc( (100vw - 768px)/(1440 - 768) * (18 - 14) + 14px),18px);
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin-top: 40px;
+}

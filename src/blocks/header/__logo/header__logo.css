@@ -1,5 +1,5 @@
 .header__logo{
-  margin-left: calc( (100vw - 768px)/(1440 - 768) * (104 - 40) + 40px);
+  margin-left: min(calc( (100vw - 768px)/(1440 - 768) * (104 - 40) + 40px),104px);
   align-self: center;
   font-style: normal;
   font-weight: bold;

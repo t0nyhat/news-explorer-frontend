@@ -1,5 +1,4 @@
 .article__status {
-  display: flex;
   align-items: center;
   height: 100%;
   background: #FFFFFF;
@@ -7,4 +6,7 @@
   margin-right: 5px;
   margin-left: auto;
   display: none;
+}
+.article__status_show {
+  display: flex;
 }

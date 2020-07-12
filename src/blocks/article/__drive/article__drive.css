@@ -12,3 +12,6 @@
   cursor: pointer;
   background-image: url('../../../images/bookmark_active.svg');
 }
+.article__drive_marked {
+  background-image: url('../../../images/bookmarked.svg');
+}

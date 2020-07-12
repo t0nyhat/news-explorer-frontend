@@ -12,6 +12,7 @@
 @import url(__data/article__data.css);
 @import url(__keyword-value/article__keyword-value.css);
 @import url(__status-value/article__status-value.css);
+@import url(__saved-drive/saved-drive.css);
 .article {
   border-radius: 20px;
   max-width: 400px;

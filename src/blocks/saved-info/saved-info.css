@@ -1,0 +1,35 @@
+@import url(__about/saved-info__about.css);
+@import url(__container/saved-info__container.css);
+@import url(__page-name/saved-info__page-name.css);
+@import url(__title/saved-info__title.css);
+
+.saved-info{
+  height: min(calc( (100vw - 768px)/(1440 - 768) * (294 - 204) + 204px),294px);
+  background: #FFF;
+  display: flex;
+}
+
+@media screen and (max-width: 767px){
+  .saved-info__container{
+    margin-top: calc( (100vw - 768px)/(1440 - 768) * (74 - 64) + 64px);
+    width: 288px;
+    height: 310px;
+  }
+  .saved-info{
+    height: 280px;
+  }
+  .saved-info__page-name{
+    font-size: 14px;
+  }
+  .saved-info__title{
+    font-size: 30px;
+    line-height: 34px;
+    color: #1A1B22;
+    margin: min(calc( (100vw - 768px)/(1440 - 768) * (28 - 16) + 16px),28px) 0 0;
+    width: min(calc( (100vw - 768px)/(1440 - 768) * (530 - 336) + 336px),530px);
+  }
+  .saved-info__about{
+    font-size: 18px;
+  }
+
+}

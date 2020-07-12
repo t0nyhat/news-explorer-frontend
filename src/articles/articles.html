@@ -12,127 +12,124 @@
 </head>
 
 <body>
-  <div class="search-and-header-container">
-    <header class="header">
-      <div class="header__logo">
-        <span class="header__logo-text">NewsExplorer</span>
-        <img class="header__mobile-menu-pic" src="<%=require('../images/menu.svg').default%>" alt="mobile menu icon">
-      </div>
-      <nav class="header__menu header__menu_hide">
-        <a class="link header__link  header__link_active" href="index.html">Главная</a>
-        <a class="link articles header__link header__link_hide" href="articles/index.html">Сохранённые статьи</a>
-        <button class="button header__auth-button">
-          <span class="header__auth-text">Авторизоваться</span>
-          <img src="<%=require('../images/logout_light.svg').default%>" class="header__logout-pic" alt="icon logout">
-        </button>
-      </nav>
-    </header>
-  </div>
+  <header class="header header_light">
+    <div class="header__logo">
+      <span class="header__logo-text ">NewsExplorer</span>
+      <img class="header__mobile-menu-pic" src="<%=require('../images/menu_dark.svg').default%>" alt="mobile menu icon">
+    </div>
+    <nav class="header__menu header__menu_hide header__menu_auth">
+      <a class="link header__link header__link_active header__link_dark" href="index.html">Главная</a>
+      <a class="link articles header__link header__link_dark" href="articles.html">Сохранённые статьи</a>
+      <button class="button header__auth-button header__auth-button_dark">
+        <span class="header__auth-text">Грета</span>
+        <img src="<%=require('../images/logout.svg').default%>" class="header__logout-pic  header__logout-pic_show" alt="icon logout">
+      </button>
+    </nav>
+  </header>
 
-<section class="search-results">
-  <div class="search-results__succes-container">
-    <h2 class="search-text">Результаты поиска</h2>
-  <div class="article__container">
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+  <section class="saved-info">
+    <div class="saved-info__container">
+      <span class="saved-info__page-name">Сохраненные стратьи</span>
+      <h1 class="saved-info__title">Грета, у вас 5 сохраненных статей</h1>
+      <p class="saved-info__about">По ключевым словам: <b>Природа,</b> <b>Тайга</b> и <b>2 другим</b></p>
+    </div>
+
+  </section>
+  <section class="saved-articles">
+    <div class="article__container">
+      <article class="article">
+        <div class="article__pic">
+          <menu class="article__menu article__menu_saved">
+            <div class="article__keyword article__keyword_show"><span class="article__keyword-value">Природа</span></div>
+            <div class="article__status"><span class="article__status-value">Войдите, чтобы сохранять статьи</span>
+            </div>
+            <div class="article__saved-drive "></div>
+          </menu>
         </div>
-    </article>
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+        <div class="article__data">
+          <span class="article__date">2 августа, 2019</span>
+          <h3 class="article__header">Национальное достояние – парки</h3>
+          <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <span class="article__source">Дзен</span>
         </div>
-    </article>
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+      </article>
+      <article class="article">
+        <div class="article__pic">
+          <menu class="article__menu article__menu_saved">
+            <div class="article__keyword article__keyword_show"><span class="article__keyword-value">Природа</span></div>
+            <div class="article__status article__status_show"><span class="article__status-value">Убрать из сохраненных</span>
+            </div>
+            <div class="article__saved-drive "></div>
+          </menu>
         </div>
-    </article>
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+        <div class="article__data">
+          <span class="article__date">2 августа, 2019</span>
+          <h3 class="article__header">Национальное достояние – парки</h3>
+          <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <span class="article__source">Дзен</span>
         </div>
-    </article>
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+      </article>
+      <article class="article">
+        <div class="article__pic">
+          <menu class="article__menu article__menu_saved">
+            <div class="article__keyword article__keyword_show"><span class="article__keyword-value">Природа</span></div>
+            <div class="article__status"><span class="article__status-value">Войдите, чтобы сохранять статьи</span>
+            </div>
+            <div class="article__saved-drive "></div>
+          </menu>
         </div>
-    </article>
-    <article class="article">
-      <div class="article__pic">
-        <menu class="article__menu">
-          <div class="article__keyword"><span class="article__keyword-value" >Природа</span></div>
-          <div class="article__status"><span class="article__status-value" >Войдите, чтобы сохранять статьи</span></div>
-          <div class="article__drive"></div>
-        </menu>
-      </div>
-      <div class="article__data">
-        <span class="article__date">2 августа, 2019</span>
-        <h3 class="article__header">Национальное достояние – парки</h3>
-        <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-        <span class="article__source">Дзен</span>
+        <div class="article__data">
+          <span class="article__date">2 августа, 2019</span>
+          <h3 class="article__header">Национальное достояние – парки</h3>
+          <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <span class="article__source">Дзен</span>
         </div>
-    </article>
-  </div>
-  <button class=" button search-results__more">Показать еще</button>
-  </div>
-</section>
+      </article>
+      <article class="article">
+        <div class="article__pic">
+          <menu class="article__menu article__menu_saved">
+            <div class="article__keyword article__keyword_show"><span class="article__keyword-value">Природа</span></div>
+            <div class="article__status"><span class="article__status-value">Войдите, чтобы сохранять статьи</span>
+            </div>
+            <div class="article__saved-drive "></div>
+          </menu>
+        </div>
+        <div class="article__data">
+          <span class="article__date">2 августа, 2019</span>
+          <h3 class="article__header">Национальное достояние – парки</h3>
+          <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <span class="article__source">Дзен</span>
+        </div>
+      </article>
+      <article class="article">
+        <div class="article__pic">
+          <menu class="article__menu article__menu_saved">
+            <div class="article__keyword article__keyword_show"><span class="article__keyword-value">Тайга</span></div>
+            <div class="article__status"><span class="article__status-value">Войдите, чтобы сохранять статьи</span>
+            </div>
+            <div class="article__saved-drive "></div>
+          </menu>
+        </div>
+        <div class="article__data">
+          <span class="article__date">2 августа, 2019</span>
+          <h3 class="article__header">Национальное достояние – парки</h3>
+          <p class="article__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+          <span class="article__source">Дзен</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
 
   <section class="popup popup__signup  popup_hide">
     <fieldset class="popup__container">
@@ -193,14 +190,15 @@
       <p class="footer__copyright">@ 2020 Supersite, Powered by News API</p>
       <nav class="footer__menu">
         <div class="footer__links">
-        <a class="link footer__link footer__left-link" href="index.html">Главная</a>
-        <a class="link footer__link footer__left-link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
-      </div>
+          <a class="link footer__link footer__left-link" href="index.html">Главная</a>
+          <a class="link footer__link footer__left-link" href="https://praktikum.yandex.ru/"
+            target="_blank">Яндекс.Практикум</a>
+        </div>
         <div class="footer__social">
-          <a class="link footer__link"  href="https://github.com/t0nyhat/" target="_blank" >
+          <a class="link footer__link" href="https://github.com/t0nyhat/" target="_blank">
             <img src="<%=require('../images/github-icon.png').default%>" alt="github icon">
           </a>
-          <a class="link footer__link"  href="https://github.com/t0nyhat/" target="_blank">
+          <a class="link footer__link" href="https://github.com/t0nyhat/" target="_blank">
             <img src="<%=require('../images/facebook-icon.png').default%>" alt="facebook icon">
           </a>
         </div>
@@ -208,4 +206,5 @@
     </div>
   </footer>
 </body>
+
 </html>

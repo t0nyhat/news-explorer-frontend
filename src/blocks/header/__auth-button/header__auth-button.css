@@ -9,7 +9,10 @@
   height: 48px;
   background-color: transparent;
 }
-
+.header__auth-button_dark{
+  color: black;
+  border: 1px solid black;
+}
 @media screen and (max-width: 767px){
   .header__auth-button{
     display: flex;
