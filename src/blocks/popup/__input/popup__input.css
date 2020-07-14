@@ -18,6 +18,7 @@
   opacity: 1;
   border-bottom: 1px solid rgb(0, 0, 0);
   outline: none;
+  background-color: #00ffff;
 }
 
 .popup__input:valid:not(:placeholder-shown) {
