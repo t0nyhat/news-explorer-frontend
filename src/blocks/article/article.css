@@ -1,0 +1,31 @@
+@import url(__pic/article__pic.css);
+@import url(__container/article__container.css);
+@import url(__menu/article__menu.css);
+@import url(__pic/article__pic.css);
+@import url(__drive/article__drive.css);
+@import url(__keyword/article__keyword.css);
+@import url(__status/article__status.css);
+@import url(__date/article__date.css);
+@import url(__header/article__header.css);
+@import url(__content/article__content.css);
+@import url(__source/article__source.css);
+@import url(__data/article__data.css);
+@import url(__keyword-value/article__keyword-value.css);
+@import url(__status-value/article__status-value.css);
+@import url(__saved-drive/saved-drive.css);
+.article {
+  border-radius: 20px;
+  max-width: 400px;
+  width: calc( (100vw - 768px)/(1440 - 768) * (400 - 224) + 224px);
+  max-height: 576px;
+  height: calc( (100vw - 768px)/(1440 - 768) * (576 - 420) + 420px);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 1s;
+}
+@media screen and (max-width: 767px) {
+  .article {
+    width: 288px;
+    height: 440px;
+  }
+}

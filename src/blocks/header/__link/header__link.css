@@ -1,0 +1,21 @@
+@import url(_active/header__link_active.css);
+@import url(_dark/header__link_dark.css);
+@import url(_hide/header__link_hide.css);
+
+.header__link{
+  color: #FFF;
+  line-height: calc( (100vw - 768px)/(1440 - 768) * (78 - 64) + 64px);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 56px;
+}
+.header__link_dark{
+  color: #1A1B22;
+}
+@media screen and (max-width: 767px){
+  .header__link{
+    font-size: 18px;
+    border-bottom: none;
+  }
+}

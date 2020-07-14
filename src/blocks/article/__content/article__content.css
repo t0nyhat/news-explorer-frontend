@@ -1,0 +1,22 @@
+.article__content {
+  margin-top: min(calc( (100vw - 768px)/(1440 - 768) * (16 - 10) + 10px), 16px);
+  width: 100%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+  margin-bottom: min(calc( (100vw - 768px)/(1440 - 768) * (18 - 12) + 12px), 18px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 767px) {
+  .article__content {
+    -webkit-line-clamp: 4;
+  }
+}

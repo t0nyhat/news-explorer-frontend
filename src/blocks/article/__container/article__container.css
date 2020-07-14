@@ -1,0 +1,11 @@
+.article__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 16px 16px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .article__container {
+    grid-template-columns: 288px;
+  }
+}

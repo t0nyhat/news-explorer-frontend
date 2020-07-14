@@ -1,0 +1,19 @@
+@import url(__photo/about-author_photo.css);
+@import url(__text/about-author__text.css);
+@import url(__description/about-author__description.css);
+@import url(__title/about-author__title.css);
+
+.about-author {
+  background-color: #fff;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  width: calc(100% - calc( (100vw - 768px)/(1440 - 768) * (208 - 80) + 80px));
+}
+
+@media screen and (max-width: 767px) {
+  .about-author {
+  flex-direction: column;
+  width: calc(100% - 32px);
+  }
+}

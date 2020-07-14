@@ -1,0 +1,14 @@
+.popup__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__close {
+    top: calc( (100vw - 320px)/(767 - 320) * (41 - 36) - 41px);
+    right: 15px;
+  }
+}

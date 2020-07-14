@@ -1,0 +1,9 @@
+.saved-info__about{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: min(calc( (100vw - 768px)/(1440 - 768) * (18 - 14) + 14px),18px);
+  line-height: 24px;
+  color: #1A1B22;
+  margin: min(calc( (100vw - 768px)/(1440 - 768) * (30 - 16) + 16px),30px) auto min(calc( (100vw - 768px)/(1440 - 768) * (56 - 32) + 32px),56px);
+}

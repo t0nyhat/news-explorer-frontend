@@ -1,0 +1,23 @@
+@import url(__succes-container/search-results__succes-container.css);
+@import url(__more/search-results__more.css);
+@import url(__searching-container/search-results__searching-container.css);
+@import url(__not-found-container/search-results__not-found-container.css);
+@import url(__not-found-icon/search-results__not-found-icon.css);
+@import url(__not-found-header/search-results__not-found-header.css);
+@import url(__not-found-text/search-results__not-found-text.css);
+.search-results {
+  background-color: #F5F6F7;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+.search-results__succes-container_hide {
+  display: none;
+}
+
+.search-results__searching-container_hide {
+  display: none;
+}
+
+.search-results__not-found-container_hide {
+  display: none;
+}

@@ -1,0 +1,21 @@
+.article__menu {
+  padding: min(calc( (100vw - 768px)/(1440 - 768) * (24 - 8) + 8px),24px);
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+.article__menu_saved {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .article__menu {
+    padding: 16px;
+  }
+}

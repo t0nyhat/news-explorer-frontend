@@ -1,0 +1,13 @@
+.article__data {
+  margin: min(calc( (100vw - 768px)/(1440 - 768) * (20 - 16) + 16px), 20px) min(calc( (100vw - 768px)/(1440 - 768) * (24 - 16) + 16px), 24px) 0;
+  display: grid;
+  height: min(calc( (100vw - 768px)/(1440 - 768) * (260 - 248) + 248px), 260px);
+}
+
+@media screen and (max-width: 767px) {
+
+  .article__data {
+    margin: 16px;
+    height: 212px;
+  }
+}

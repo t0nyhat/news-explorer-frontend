@@ -1,0 +1,6 @@
+.search-results__searching-container {
+  height: 282px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

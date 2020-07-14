@@ -1,0 +1,27 @@
+.search__input {
+  background: #fff;
+  border: 1px solid #d1d2d6;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  border-radius: 100px;
+  width: 100%;
+  height: calc( (100vw - 768px)/(1440 - 768) * (64 - 56) + 56px);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 24px;
+  outline: none;
+}
+
+.search__input:focus {
+  color: #1A1B22;
+
+}
+
+.search__input:valid {
+  color: #1A1B22;;
+}
+
+

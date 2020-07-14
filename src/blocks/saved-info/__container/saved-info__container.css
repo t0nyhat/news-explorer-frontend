@@ -1,0 +1,4 @@
+.saved-info__container{
+  width: min(calc( (100vw - 768px)/(1440 - 768) * (1232 - 688) + 688px),1232px);
+  margin: min(calc( (100vw - 768px)/(1440 - 768) * (40 - 24) + 24px),40px) auto 0px;
+}

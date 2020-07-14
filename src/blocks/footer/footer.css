@@ -1,0 +1,16 @@
+@import url(__container/footer__container.css);
+@import url(__copyright/footer__copyright.css);
+@import url(__social/footer__social.css);
+@import url(__social-icon/footer__social-icon.css);
+@import url(__menu/footer__menu.css);
+@import url(__link/footer__link.css);
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    line-height: 48px;
+  }
+}

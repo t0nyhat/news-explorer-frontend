@@ -1,0 +1,9 @@
+@import url(_open/header__mobile-menu-pic_open.css);
+.header__mobile-menu-pic{
+  display: none;
+}
+@media screen and (max-width: 767px){
+  .header__mobile-menu-pic{
+    display: inline;
+  }
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px){
+  .header__mobile-menu-pic_open{
+    content: url(../../../../images/close.svg);
+  }
+  .header__mobile-menu-pic_open_dark{
+    content: url(../../../../images/close_dark.svg);
+  }
+}
