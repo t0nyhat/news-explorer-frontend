@@ -26,6 +26,7 @@
 .header_light{
   color:#1A1B22;
   background-color: white;
+  box-shadow: inset 0 -1px 0 hsla(0, 1%, 6%, 0.2);
 }
 
 @media screen and (min-width: 1440px){

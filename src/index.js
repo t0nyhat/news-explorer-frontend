@@ -1,4 +1,5 @@
 import './index.css';
+import Header from './js/components/Header';
 
 const mobileMenu = document.querySelector('.header__menu');
 const header = document.querySelector('.header');
@@ -16,22 +17,20 @@ const articlesLink = document.querySelector('.articles');
 const popupMessage = document.querySelector('.popup__message');
 const popupMessageClose = document.querySelector('.popup__message .popup__close');
 
-mobileMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.toggle('header__menu_open');
-  mobileMenuButton.classList.toggle('header__mobile-menu-pic_open');
-  header.classList.toggle('header_dark');
+const headerObject = new Header({
+  header,
+  color: 'dark',
+  authButton,
+  mobileMenuButton,
+  signupPopup,
+  mobileMenu,
+  headerAuthText,
+  logoutPic,
+  articlesLink,
 });
-authButton.addEventListener('click', () => {
-  if (headerAuthText.textContent === 'Авторизоваться') {
-    signupPopup.classList.remove('popup_hide');
-    signupPopup.classList.add('popup_show');
-  } else {
-    headerAuthText.textContent = 'Авторизоваться';
-    logoutPic.classList.remove('header__logout-pic_show');
-    articlesLink.classList.add('header__link_hide');
-    mobileMenu.classList.remove('header__menu_auth');
-  }
-});
+headerObject.setEventListeners();
+
+
 signupPopup.addEventListener('submit', (event) => {
   popupMessage.classList.remove('popup_hide');
   popupMessage.classList.add('popup_show');
@@ -41,12 +40,9 @@ signupPopup.addEventListener('submit', (event) => {
   event.target.reset();
 });
 signinPopup.addEventListener('submit', (event) => {
-  logoutPic.classList.add('header__logout-pic_show');
-  headerAuthText.textContent = 'Грета';
   signinPopup.classList.remove('popup_show');
   signinPopup.classList.add('popup_hide');
-  articlesLink.classList.remove('header__link_hide');
-  mobileMenu.classList.add('header__menu_auth');
+  headerObject.render({ isLoggedIn: true, userName: 'Антон' });
   event.preventDefault();
   event.target.reset();
 });
